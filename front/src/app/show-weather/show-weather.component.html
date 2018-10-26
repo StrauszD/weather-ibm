@@ -1,0 +1,17 @@
+<video autoplay muted loop class="bg-video">
+  <source src="../../assets/Pexels%20Videos%201246820.mp4" type="video/mp4">
+</video>
+<div class="outer container-cstm">
+  <div class="middle">
+    <h2>The Weather Company IBM</h2>
+    <h3>Latitude: {{lat}} - Longitude: {{long}}</h3>
+    <div class="inner row container">
+      <div *ngFor="let forecast of forecasts" class="card-panel col m12 s12">
+        <h4>{{forecast.dow}}</h4>
+        <h6>{{forecast.narrative}}</h6>
+        <p>Min temp: {{forecast.min_temp}}</p>
+        <p>Max temp: {{forecast.max_temp}}</p>
+      </div>
+    </div>
+  </div>
+</div>
